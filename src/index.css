@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bottom-20px {
+  bottom: 20px !important;
+}
+
+@layer utilities {
+  .custom-shape {
+    @apply relative w-72 h-72 bg-white overflow-hidden;
+    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%, 0% 50%);
+  }
+}
+
+.clip-path {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
